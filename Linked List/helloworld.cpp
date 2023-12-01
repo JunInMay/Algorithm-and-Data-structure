@@ -87,7 +87,7 @@ public:
         else if (before == nullptr && next != nullptr) {
             next->set_before(nullptr);
         }
-        free(now);
+        delete now;
 
         this->size--;
     }
